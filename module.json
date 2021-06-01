@@ -2,7 +2,7 @@
 	"name": "player-notes",
 	"title": "Player Notes",
 	"description": "Adds the option to create notes for Actors, Items and JournalEntrys accessible to Players",
-	"version": "0.8.6.4",
+	"version": "0.8.6.5",
 	"author": "techogre",
 	"scripts": ["./player-notes.js"],
 	"styles": ["./player-notes.css"],

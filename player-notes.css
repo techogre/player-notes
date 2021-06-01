@@ -1,0 +1,11 @@
+.player-notes .editor {
+    position:sticky;
+    overflow:auto;
+    height:90%;
+}
+
+.player-notes button {
+    height: 34px;
+    width: 48%;
+    margin-bottom: 6px;
+}

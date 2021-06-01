@@ -7,7 +7,7 @@
 	"scripts": ["./player-notes.js"],
 	"styles": ["./player-notes.css"],
 	"url": "https://github.com/techogre/player-notes",
-	"manifest": "https://raw.githubusercontent.com/techogre/player-notes/master/module.json",
+	"manifest": "https://github.com/techogre/player-notes/blob/faab64f610a21fab286f2b10350fd85494982029/module.json",
 	"download": "https://github.com/techogre/player-notes/archive/master.zip",
 	"languages": [
 		{

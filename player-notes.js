@@ -70,6 +70,24 @@ class PlayerNote extends FormApplication {
 		openBtn.insertAfter(titleElement);
 	}
 	
+	/** @override */
+	get isEditable() {
+		return this.options.editable;
+	}
+	
+	/** @override */
+	getData(options) {
+		let isOwner = true;
+		return {
+			cssClass: isOwner ? "editable" : "locked",
+			editable: this.isEditable,
+			entity: duplicate(this.entity.data),
+			limited: this.entity.limited,
+			options: this.options,
+			owner: isOwner,
+			title: this.title
+    }
+  }
 
 }
 

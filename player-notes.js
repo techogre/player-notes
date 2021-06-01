@@ -72,10 +72,12 @@ class PlayerNote extends FormApplication {
 	
 	/** @override */
 	get isEditable() {
-		return this.options.editable;
+		//return this.options.editable;
+		return true;
 	}
 	
 	/** @override */
+	/**
 	getData(options) {
 		//let isOwner = this.entity.owner;
 		let isOwner = true;
@@ -91,6 +93,7 @@ class PlayerNote extends FormApplication {
 			title: game.i18n.localize('PlayerNote.label')
 		}
 	}
+	*/
 }
 
 

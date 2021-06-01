@@ -77,19 +77,22 @@ class PlayerNote extends FormApplication {
 	
 	/** @override */
 	getData(options) {
+		//let isOwner = this.entity.owner;
 		let isOwner = true;
 		return {
 			cssClass: isOwner ? "editable" : "locked",
-			editable: this.isEditable,
+			//editable: this.isEditable,
+			editable: true,
 			entity: duplicate(this.entity.data),
 			limited: this.entity.limited,
 			options: this.options,
 			owner: isOwner,
-			title: this.title
-    }
-  }
-
+			//title: this.title
+			title: game.i18n.localize('PlayerNote.label')
+		}
+	}
 }
+
 
 Hooks.on('init', () => {
 	game.settings.register("player-notes", 'showLabel', {
